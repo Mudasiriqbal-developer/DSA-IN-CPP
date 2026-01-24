@@ -1,21 +1,25 @@
-#include<iostream>
-#include<vector>
-using namespace std;  
-int main()  
-{  
-	class Solution {
-public:
-    bool containsDuplicate(vector<int>& nums) {
-        unordered_set<int> seen;
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    class Solution
+    {
+    public:
+        bool containsDuplicate(vector<int> &nums)
+        {
+            unordered_set<int> seen;
 
-        for(int x : nums) {
-            if(seen.count(x)) {
-                return true;  // duplicate found
+            for (int x : nums)
+            {
+                if (seen.count(x))
+                {
+                    return true; // duplicate found
+                }
+                seen.insert(x);
             }
-            seen.insert(x);
-        }
 
-        return false;  // no duplicates
-    }
-};
+            return false; // no duplicates
+        }
+    };
 }
