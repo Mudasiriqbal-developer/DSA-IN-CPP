@@ -2,7 +2,15 @@
 #include<vector>
 using namespace std;
 main () {
+    // Declaration of a vector.
     vector<int> vec;
+
+    // Initializing a vector with some values.
+    // vector<int> vec = {1, 2, 3, 4, 5};
+
+    // This will create a vector of size 5 with all elements initialized to 0.
+    // vector<int> vec(5, 0); 
+
     // Insert elements in the last of the vector.
     vec.push_back(1);
     vec.push_back(2);
